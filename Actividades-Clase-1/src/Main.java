@@ -1,7 +1,9 @@
 public class Main {
     public static void main(String[] args) {
         //  Introducción a algoritmos y java
-        //  Actividad 1:  *** Descomentar para probar cada punto ***
+
+        //  Actividad 1:
+        // *** Descomentar para probar cada punto ***
 
         //a_
         int numInicio = 5;
@@ -39,10 +41,23 @@ public class Main {
         //     System.out.println(otroNumFin);
         // }
 
-        //******************************************************************************************************
+        //***************************************************************************************
 
         //Actividad 2:
+        // *** Puede cambiar estas variables para ir probando ***
 
+        float ingresoTotal = 489083;  //Ingresos mensuales totales del hogar
+        int cantidadVehiculos = 2;    //Cantidad de vehiculos con antigüedad menor a 5 años
+        int cantidadInmuebles = 2;    //Cantidad de inmuebles
+        boolean embarcacion = false;     //¿Posee una embarcacion?
+        boolean aeronaveDeLujo = false;  //¿Posee aeronave de lujo?
+        boolean titularActivosSocietarios = false;  //¿Es titular de activos societarios?
+
+        if ((ingresoTotal >= 489083) || (cantidadVehiculos >= 3) || (cantidadInmuebles >= 3) || (embarcacion || aeronaveDeLujo || titularActivosSocietarios)){
+            System.out.println("Usted pertenece al segmento de ingresos altos");
+        } else {
+            System.out.println("Usted no pertenece al segmento de ingresos altos");
+        }
 
     }
 }
